@@ -10,12 +10,30 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Automate your notary workflows and reclaim 3,500 hours annually"
+	subtitle="AI-powered document creation, case management, and intelligent communication for German notaries drowning in manual paperwork."
+	imageSrc="/generated/image-a-professional-german-notary-in-a-modern.webp"
+	centered={false}
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request demo"
+		},
+		{
+			href: "/about",
+			label: "Learn more"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by German legal professionals"
+	logoUrls={[
+		'https://cdn.brandfetch.io/bundesnotarkammer.de/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/ra-micro.de/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/legartis.ai/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/notarnet.de/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
