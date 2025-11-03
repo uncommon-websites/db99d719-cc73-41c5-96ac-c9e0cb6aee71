@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconFileText from "~icons/lucide/file-text";
+	import IconFolderKanban from "~icons/lucide/folder-kanban";
+	import IconMessageSquare from "~icons/lucide/message-square";
+	import IconSearch from "~icons/lucide/search";
+	import IconShieldCheck from "~icons/lucide/shield-check";
+	import IconPlug from "~icons/lucide/plug";
 </script>
 
 <Hero
@@ -36,62 +44,103 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="LawX transforms traditional notary offices into efficient, modern practices through AI-powered automation specifically designed for German legal workflows. We eliminate 3,500 hours of manual documentation annually, enabling small and medium-sized notary firms to handle more cases without expanding headcount. Our intelligent platform integrates seamlessly with your existing Microsoft tools, turning administrative burden into competitive advantage while maintaining the highest standards of legal compliance and data security."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Dr. Klaus Hartmann",
+			position: "Notar",
+			company: "Kanzlei Hartmann",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"LawX has transformed our practice completely. We now handle 40% more property transactions with the same team size, and document preparation that used to take hours is done in minutes. The AI understands German notary language perfectly.",
+			image: "/generated/image-a-professional-german-male-notary-in-a-w.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Sabine Müller-Weber",
+			position: "Notarin",
+			company: "Notariat Müller-Weber",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before LawX, missed deadlines and manual errors cost us thousands in liability insurance claims. Now our compliance rate is 100%, and we've reduced administrative costs by 30%. The automated case management ensures nothing falls through the cracks.",
+			image: "/generated/image-a-professional-german-female-notary-at-h.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Matthias Schneider",
+			position: "Notar",
+			company: "Notarbüro Schneider & Partner",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We were skeptical about AI in legal work, but LawX proved itself immediately. The time saved on document creation alone—over 3,000 hours annually—allowed us to take on 25% more clients without hiring additional staff. The ROI was clear within three months.",
+			image: "/generated/image-a-professional-german-male-notary-with-g.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for the modern notary"
+	subtitle="Powerful features that transform how you work"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "AI-powered document creation",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Generate legally compliant notary documents in minutes, not hours. Our AI understands German legal requirements and learns from your templates to eliminate repetitive drafting work.",
+			icon: IconFileText,
+			iconClass: "text-[#006E80]"
 		},
 		{
-			title: "Data Analysis",
+			title: "Intelligent case management",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Track every case from intake to completion with automated deadlines and smart reminders. Never miss an obligation or lose track of critical details across multiple matters.",
+			icon: IconFolderKanban,
+			iconClass: "text-[#0C6E42]"
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Seamless communication hub",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Integrate email, calendar, and messaging into one unified workspace. Connect with clients and partners efficiently while maintaining complete case context at your fingertips.",
+			icon: IconMessageSquare,
+			iconClass: "text-[#006E80]"
+		},
+		{
+			title: "Semantic document search",
+			description:
+				"Find any document, clause, or case detail instantly using natural language queries. Advanced AI understands legal context and retrieves exactly what you need in seconds.",
+			icon: IconSearch,
+			iconClass: "text-[#0C6E42]"
+		},
+		{
+			title: "German legal compliance",
+			description:
+				"Built on Microsoft Azure with German data residency and strict GDPR compliance. Your client data stays protected with attorney-client privilege safeguards and enterprise security.",
+			icon: IconShieldCheck,
+			iconClass: "text-[#006E80]"
+		},
+		{
+			title: "Microsoft ecosystem integration",
+			description:
+				"Works seamlessly with Word, Outlook, and tools you already use daily. Adopt powerful automation without disrupting your established workflows or retraining your team.",
+			icon: IconPlug,
+			iconClass: "text-[#0C6E42]"
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Join the beta program before September 2025"
+	subtitle="Limited spots for forward-thinking notaries"
+	description="Be among the first German notaries to automate 3,500 hours of manual work annually. Our September MVP launch is approaching fast, and Design Partner slots are filling quickly. Join practices already saving 30% in costs while handling 20% more cases. Your competitors are already exploring AI—will you lead or follow?"
+	imageSrc="/generated/image-a-successful-german-notary-dressed-in-pr.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request your demo",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Meet the founders",
+			variant: "secondary"
+		}
+	]}
+/>

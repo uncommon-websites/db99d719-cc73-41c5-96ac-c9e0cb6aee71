@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Dr. Norman Koschmieder",
+		role: "CEO & Founder",
+		image: "/generated/image-a-professional-male-founder-stands-confi.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"At Enpal and Flink, I watched legal processes become the bottleneck that stopped everything. Deals waiting weeks for simple documents. Teams blocked by manual workflows. That's when Sara, Torben, and I realized we could fix this—not just for startups, but for the notaries drowning in the same inefficiencies we faced."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
